@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.apppizzaria"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.apppizzaria"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
