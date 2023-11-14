@@ -69,19 +69,19 @@ class MainActivity : AppCompatActivity() {
                 binding.txtListTitle.text = "Popular Pizza"
             }
         }
-        binding.btPizza.setOnClickListener {
+        binding.btKebab.setOnClickListener {
             clicked = true
             if (clicked) {
-                binding.btPizza.setBackgroundResource(R.drawable.bg_button_enabled)
-                binding.btPizza.setTextColor(Color.WHITE)
+                binding.btKebab.setBackgroundResource(R.drawable.bg_button_enabled)
+                binding.btKebab.setTextColor(Color.WHITE)
+                binding.btPizza.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btPizza.setTextColor(R.color.dark_gray)
                 binding.btChicken.setBackgroundResource(R.drawable.bg_button_disabled)
                 binding.btChicken.setTextColor(R.color.dark_gray)
                 binding.btAll.setBackgroundResource(R.drawable.bg_button_disabled)
                 binding.btAll.setTextColor(R.color.dark_gray)
-                binding.btKebab.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btKebab.setTextColor(R.color.dark_gray)
-                binding.recycleViewProducts.visibility = View.VISIBLE
-                binding.txtListTitle.text = "Popular Pizza"
+                binding.recycleViewProducts.visibility = View.INVISIBLE
+                binding.txtListTitle.text = "Kebab"
             }
         }
 
