@@ -35,24 +35,55 @@ class MainActivity : AppCompatActivity() {
                 binding.txtListTitle.text = "All"
             }
             }
-        binding.btAll.setOnClickListener {
+
+
+        binding.btChicken.setOnClickListener {
             clicked = true
-            if (clicked){
-                binding.btAll.setBackgroundResource(R.drawable.bg_button_enabled)
-                binding.btAll.setTextColor(Color.WHITE)
-                binding.btChicken.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btChicken.setTextColor(R.color.dark_gray)
+            if (clicked) {
+                binding.btChicken.setBackgroundResource(R.drawable.bg_button_enabled)
+                binding.btChicken.setTextColor(Color.WHITE)
+                binding.btAll.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btAll.setTextColor(R.color.dark_gray)
                 binding.btKebab.setBackgroundResource(R.drawable.bg_button_disabled)
                 binding.btKebab.setTextColor(R.color.dark_gray)
                 binding.btPizza.setBackgroundResource(R.drawable.bg_button_disabled)
                 binding.btPizza.setTextColor(R.color.dark_gray)
                 binding.recycleViewProducts.visibility = View.INVISIBLE
-                binding.txtListTitle.text = "All"
+                binding.txtListTitle.text = "Chicken"
+            }
+            }
+
+
+        binding.btPizza.setOnClickListener {
+            clicked = true
+            if (clicked) {
+                binding.btPizza.setBackgroundResource(R.drawable.bg_button_enabled)
+                binding.btPizza.setTextColor(Color.WHITE)
+                binding.btChicken.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btChicken.setTextColor(R.color.dark_gray)
+                binding.btAll.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btAll.setTextColor(R.color.dark_gray)
+                binding.btKebab.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btKebab.setTextColor(R.color.dark_gray)
+                binding.recycleViewProducts.visibility = View.VISIBLE
+                binding.txtListTitle.text = "Popular Pizza"
             }
         }
-
-
-
+        binding.btPizza.setOnClickListener {
+            clicked = true
+            if (clicked) {
+                binding.btPizza.setBackgroundResource(R.drawable.bg_button_enabled)
+                binding.btPizza.setTextColor(Color.WHITE)
+                binding.btChicken.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btChicken.setTextColor(R.color.dark_gray)
+                binding.btAll.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btAll.setTextColor(R.color.dark_gray)
+                binding.btKebab.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btKebab.setTextColor(R.color.dark_gray)
+                binding.recycleViewProducts.visibility = View.VISIBLE
+                binding.txtListTitle.text = "Popular Pizza"
+            }
+        }
 
         }
     }
